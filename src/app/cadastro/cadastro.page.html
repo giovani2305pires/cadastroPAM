@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
 
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -15,38 +15,40 @@
 
   <ion-item>
     <ion-label position="floating">Nome</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="usuario.nome" ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">CPF</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="usuario.cpf" ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Data de Nascimento</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="usuario.dataNascimento" ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Telefone</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="usuario.telefone" ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Email</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="usuario.email" ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Senha</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="usuario.senha" ></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Confirmar Senha</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="confirmarSenha"></ion-input>
   </ion-item>
+
+  <ion-button color="success" expand="block" (click)="salvar()">SALVAR</ion-button>
 
   <ion-button routerLink="/home" expand="block">Voltar</ion-button>
 
